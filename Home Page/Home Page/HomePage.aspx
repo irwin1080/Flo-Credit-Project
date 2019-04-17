@@ -60,6 +60,7 @@
      </form>
 
     <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+     <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
 </body>
 </html>
 

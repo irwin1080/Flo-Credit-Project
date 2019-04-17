@@ -61,6 +61,40 @@
          </nav>   
      </div>
      </form>
+
+     <div id="carouselExample" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExample" data-slide-to="0" class="active"> </li>
+            <li data-target="#carouselExample" data-slide-to="1"> </li>
+            <li data-target="#carouselExample" data-slide-to="2"> </li>
+            <li data-target="#carouselExample" data-slide-to="3"> </li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/card.jpg" />
+            </div>
+                <div class="carousel-item">
+                <img src="Images/card 2.jpg" />
+            </div>
+                <div class="carousel-item">
+                 <img src="Images/card 3.jpg" />
+            </div>
+             </div>
+                <div class="carousel-item">
+                 <img src="Images/card 4.jpg" />
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+  
+
 </body>
 </html>
 

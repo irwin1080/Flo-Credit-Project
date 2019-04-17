@@ -34,6 +34,9 @@
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto"> 
                         <li class="nav-item active">
+                            <a class ="nav-link" href="#">Login</a>
+                        </li>
+                         <li class="nav-item active">
                             <a class ="nav-link" href="#">Apply</a>
                         </li>
                         <li class="nav-item active">
@@ -58,10 +61,6 @@
          </nav>   
      </div>
      </form>
-
-    <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
-    <br /> 
-     <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
 </body>
 </html>
 

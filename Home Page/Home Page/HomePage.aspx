@@ -19,7 +19,7 @@
     <title>Flo Credit</title>
 </head>
 <body>
-    <div class = "container"> 
+    <div class="row align-items-center justify-content-center"> 
         <img src="Images/Flo Credit Logo.png" height ="200 " width ="200 " />
     </div> 
 
@@ -31,7 +31,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <div class="row align-items-center justify-content-center" class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto"> 
                         <li class="nav-item active">
                             <a class ="nav-link" href="#">Login</a>
@@ -61,13 +61,13 @@
          </nav>   
      </div>
      </form>
-
+    <div class="row align-items-center justify-content-center"> 
      <div id="carouselExample" class="carousel" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExample" data-slide-to="0" class="active"> </li>
-            <li data-target="#carouselExample" data-slide-to="1"> </li>
+            <li data-target="#carouselExample" data-slide-to="1" class="active"> </li>
             <li data-target="#carouselExample" data-slide-to="2"> </li>
             <li data-target="#carouselExample" data-slide-to="3"> </li>
+            <li data-target="#carouselExample" data-slide-to="4"> </li>
         </ol>
 
         <div class="carousel-inner">
@@ -94,7 +94,7 @@
             <span class="carousel-control-next-icon"></span>
         </a>
   
-
+    </div>
 </body>
 </html>
 

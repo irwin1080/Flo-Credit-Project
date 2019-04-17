@@ -40,6 +40,15 @@ namespace Home_Page {
         protected global::System.Web.UI.WebControls.Label lblFirstName;
         
         /// <summary>
+        /// txtFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        
+        /// <summary>
         /// lblLastName control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace Home_Page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLastName;
+        
+        /// <summary>
+        /// txtLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
         /// lblDOB control.
@@ -58,6 +76,15 @@ namespace Home_Page {
         protected global::System.Web.UI.WebControls.Label lblDOB;
         
         /// <summary>
+        /// txtDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDOB;
+        
+        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -65,6 +92,15 @@ namespace Home_Page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEmail;
+        
+        /// <summary>
+        /// txtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
         /// lblStreet control.
@@ -76,6 +112,15 @@ namespace Home_Page {
         protected global::System.Web.UI.WebControls.Label lblStreet;
         
         /// <summary>
+        /// txtStreet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStreet;
+        
+        /// <summary>
         /// lblCity control.
         /// </summary>
         /// <remarks>
@@ -83,6 +128,15 @@ namespace Home_Page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCity;
+        
+        /// <summary>
+        /// txtCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCity;
         
         /// <summary>
         /// lblState control.
@@ -94,6 +148,15 @@ namespace Home_Page {
         protected global::System.Web.UI.WebControls.Label lblState;
         
         /// <summary>
+        /// txtState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtState;
+        
+        /// <summary>
         /// lblSSN control.
         /// </summary>
         /// <remarks>
@@ -103,6 +166,15 @@ namespace Home_Page {
         protected global::System.Web.UI.WebControls.Label lblSSN;
         
         /// <summary>
+        /// txtSSN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSSN;
+        
+        /// <summary>
         /// lblAnnualIncome control.
         /// </summary>
         /// <remarks>
@@ -110,5 +182,14 @@ namespace Home_Page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAnnualIncome;
+        
+        /// <summary>
+        /// txtAnnualIncome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAnnualIncome;
     }
 }

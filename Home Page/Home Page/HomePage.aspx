@@ -5,8 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
-
-
      <%-- Required metatags --%>
     <meta charset ="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
@@ -21,7 +19,7 @@
     <title>Flo Credit</title>
 </head>
 <body>
-    <div   class = "container"> 
+    <div class = "container"> 
         <img src="Images/Flo Credit Logo.png" height ="200 " width ="200 " />
     </div> 
 
@@ -60,6 +58,8 @@
          </nav>   
      </div>
      </form>
+
+    <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
 </body>
 </html>
 

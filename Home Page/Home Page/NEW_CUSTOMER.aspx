@@ -1,13 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="New Customer.aspx.cs" Inherits="Home_Page.New_Customer" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTER_PAGE.Master" AutoEventWireup="true" CodeBehind="NEW_CUSTOMER.aspx.cs" Inherits="Home_Page.NEW_CUSTOMER" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  
         <div>
             <asp:Label ID="lblInstructions" runat="server" Text="Please fill out the fields below to register for an account. "></asp:Label>
              <br />   <br /> 
@@ -56,7 +51,7 @@
              <br />   <br /> 
             <asp:TextBox ID="txtAnnualIncome" runat="server"></asp:TextBox>
             <br />   <br /> 
+            <asp:Button ID="btnLogin" runat="server" Text="Login" />
         </div>
-    </form>
-</body>
-</html>
+ 
+</asp:Content>

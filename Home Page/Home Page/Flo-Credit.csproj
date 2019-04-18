@@ -123,7 +123,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="ExistingUser.aspx" />
+    <Content Include="EXISTING_USER.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -135,15 +135,16 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="HOME_PAGE.aspx" />
+    <Content Include="LOGIN_PAGE.aspx" />
+    <Content Include="MASTER_PAGE.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="HomePage.aspx" />
     <Content Include="Images\card 2.jpg" />
     <Content Include="Images\card 3.jpg" />
     <Content Include="Images\card 4.jpg" />
     <Content Include="Images\card.jpg" />
     <Content Include="Images\Flo Credit Logo.png" />
-    <Content Include="Login.aspx" />
-    <Content Include="New Customer.aspx" />
+    <Content Include="NEW_CUSTOMER.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -202,36 +203,43 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExistingUser.aspx.cs">
-      <DependentUpon>ExistingUser.aspx</DependentUpon>
+    <Compile Include="EXISTING_USER.aspx.cs">
+      <DependentUpon>EXISTING_USER.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExistingUser.aspx.designer.cs">
-      <DependentUpon>ExistingUser.aspx</DependentUpon>
+    <Compile Include="EXISTING_USER.aspx.designer.cs">
+      <DependentUpon>EXISTING_USER.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="HOME_PAGE.aspx.cs">
+      <DependentUpon>HOME_PAGE.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
+    <Compile Include="HOME_PAGE.aspx.designer.cs">
+      <DependentUpon>HOME_PAGE.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LOGIN_PAGE.aspx.cs">
+      <DependentUpon>LOGIN_PAGE.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LOGIN_PAGE.aspx.designer.cs">
+      <DependentUpon>LOGIN_PAGE.aspx</DependentUpon>
     </Compile>
-    <Compile Include="New Customer.aspx.cs">
-      <DependentUpon>New Customer.aspx</DependentUpon>
+    <Compile Include="MASTER_PAGE.Master.cs">
+      <DependentUpon>MASTER_PAGE.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="New Customer.aspx.designer.cs">
-      <DependentUpon>New Customer.aspx</DependentUpon>
+    <Compile Include="MASTER_PAGE.Master.designer.cs">
+      <DependentUpon>MASTER_PAGE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NEW_CUSTOMER.aspx.cs">
+      <DependentUpon>NEW_CUSTOMER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NEW_CUSTOMER.aspx.designer.cs">
+      <DependentUpon>NEW_CUSTOMER.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

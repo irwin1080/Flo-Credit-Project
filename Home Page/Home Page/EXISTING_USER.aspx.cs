@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Home_Page
 {
-    public partial class Existing_User : System.Web.UI.Page
+    public partial class EXISTING_USER : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

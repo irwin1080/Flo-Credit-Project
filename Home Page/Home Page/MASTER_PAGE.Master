@@ -1,11 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Home_Page.HomePage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MASTER_PAGE.master.cs" Inherits="Home_Page.MASTER_PAGE" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
-    
-     <%-- Required metatags --%>
+    <title>Flo Credit</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+      <%-- Required metatags --%>
     <meta charset ="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
     
@@ -16,17 +22,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"> </script>
 
 
-    <title>Flo Credit</title>
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
-    <div class="row align-items-center justify-content-center"> 
+    <form id="form1" runat="server">
+
+
+        <div class="row align-items-center justify-content-center"> 
         <img src="Images/Flo Credit Logo.png" height ="200 " width ="500 " />
     </div> 
 
-    <form id="form1" >
+ 
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="HOME_PAGE.aspx">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,10 +52,10 @@
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto"> 
                         <li class="nav-item active">
-                            <a class ="nav-link" href="Login.aspx">Login</a>
+                            <a class ="nav-link" href="LOGIN_PAGE.aspx">Login</a>
                         </li>
                          <li class="nav-item active">
-                            <a class ="nav-link" href="New Customer.aspx">Apply</a>
+                            <a class ="nav-link" href="NEW_CUSTOMER.aspx">Apply</a>
                         </li>
                         <li class="nav-item active">
                             <a class ="nav-link" href="#">Products</a>
@@ -60,34 +78,20 @@
                 </div>
          </nav>   
      </div>
-     </form>
+   
 
-    <div class="row align-items-center justify-content-center"> 
-     <div id="carouselExample" class="carousel" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExample" data-slide-to="0" class="active"> </li>
-            <li data-target="#carouselExample" data-slide-to="1"> </li>
-            <li data-target="#carouselExample" data-slide-to="2"> </li>
-            <li data-target="#carouselExample" data-slide-to="3"> </li>
-        </ol>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Images/card.jpg" />
-            </div>
-                <div class="carousel-item">
-                <img src="Images/card 2.jpg" />
-            </div>
-                <div class="carousel-item">
-                 <img src="Images/card 3.jpg" />
-            </div>
-                <div class="carousel-item">
-                <img src="Images/card 4.jpg" />
-            </div>
+
+
+
+
+
+
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
-  
-    </div>
+    </form>
 </body>
 </html>
-
-

@@ -37,7 +37,7 @@
                             <a class ="nav-link" href="Login.aspx">Login</a>
                         </li>
                          <li class="nav-item active">
-                            <a class ="nav-link" href="#">Apply</a>
+                            <a class ="nav-link" href="New Customer.aspx">Apply</a>
                         </li>
                         <li class="nav-item active">
                             <a class ="nav-link" href="#">Products</a>

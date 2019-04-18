@@ -13,5 +13,23 @@ namespace Home_Page
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string userID, password;
+
+            userID = txtUserID.Text;
+            password = txtPassword.Text;
+
+            if (userID == "admin" && password == "admin")
+            {
+                //lblLoginMsg.Text = " Welcome Admin";
+                Response.Redirect("ExistingUser.aspx");
+            }
+            else
+            {
+                lblLoginMsg.Text = "ID/Password do not exist";
+            }
+        }
     }
 }

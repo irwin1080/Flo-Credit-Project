@@ -9,20 +9,20 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label3" runat="server" Text=" User ID"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Enter User ID"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Label ID="Label4" runat="server" Text="Password"></asp:Label>
-            <br />
-            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtUserID" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Login"/>
+            <asp:Label ID="Label4" runat="server" Text="Enter Password"></asp:Label>
+            <br />
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click"/>
             <br />  
             <br />
-            <asp:Label ID="Label5" runat="server" Text=" "></asp:Label>
+            <asp:Label ID="lblLoginMsg" runat="server" Text=" "></asp:Label>
         </div>
     </form>
 </body>

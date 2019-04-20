@@ -27,9 +27,14 @@
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             <br />   <br /> 
 
-             <asp:Label ID="lblStreet" runat="server" Text="Street Address"></asp:Label>
+             <asp:Label ID="lblStreet1" runat="server" Text="Street Address 1"></asp:Label>
              <br />   <br /> 
-            <asp:TextBox ID="txtStreet" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtStreet1" runat="server"></asp:TextBox>
+            <br />   <br /> 
+
+              <asp:Label ID="lblStreet2" runat="server" Text="Street Address 2"></asp:Label>
+             <br />   <br /> 
+            <asp:TextBox ID="txtStreet2" runat="server"></asp:TextBox>
             <br />   <br /> 
 
              <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
@@ -43,15 +48,27 @@
             <br />   <br /> 
 
             <asp:Label ID="lblSSN" runat="server" Text="Social Security Number"></asp:Label>
-             <br />   <br /> 
+            
+            <br />   <br /> 
             <asp:TextBox ID="txtSSN" runat="server"></asp:TextBox>
             <br />   <br /> 
-
+            
             <asp:Label ID="lblAnnualIncome" runat="server" Text="Annual Income"></asp:Label>
              <br />   <br /> 
             <asp:TextBox ID="txtAnnualIncome" runat="server"></asp:TextBox>
             <br />   <br /> 
-            <asp:Button ID="btnLogin" runat="server" Text="Login" />
+
+            <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+             <br />   <br /> 
+            <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+            <br />   <br /> 
+
+             <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
+             <br />   <br /> 
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <br />   <br /> 
+
+            <asp:Button ID="btnRegister" runat="server" Text="Register" />
         </div>
  
 </asp:Content>

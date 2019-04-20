@@ -4,10 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
         <div>
-            <asp:Label ID="lblInstructions" runat="server" Text="Please fill out the fields below to register for an account. "></asp:Label>
+            <asp:Label ID="lblInstructions" runat="server" Text="Please fill out the fields below to register for an account. " BorderStyle="None"></asp:Label>
              <br />   <br /> 
+          
             
-           <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
+         <table class="table table-active" style="background-color: #FFFFFF"> 
+            <thead style="border-top-style: none"> 
+                <tr style="background-color: #FFFFFF"> 
+                    <td>
+                         <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFirstName" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
@@ -43,7 +48,9 @@
            <asp:TextBox ID="txtStreet2" runat="server"></asp:TextBox>
            <br />   <br /> 
 
-           <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
+                    </td>
+                    <td> 
+ <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtCity" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
@@ -78,6 +85,12 @@
            <br />   <br /> 
            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
            <br />   <br /> 
+                    </td>
+                </tr>
+            </thead>
+         </table>
+          
+          
           
            <asp:Button ID="btnRegister" runat="server" Text="Register" />
         </div>

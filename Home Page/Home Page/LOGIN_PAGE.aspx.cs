@@ -16,6 +16,9 @@ namespace Home_Page
         }
         public string conString = "Data Source=customer-flo-credit.database.windows.net;Initial Catalog=CUSTOMER_DB;Persist Security Info=True;User ID=Customer;Password=***********";
 
+
+        //signs them into their account if they have one registered 
+        //if not, they are redirected to sign up 
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(conString);

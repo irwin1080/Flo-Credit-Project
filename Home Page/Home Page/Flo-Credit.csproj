@@ -238,6 +238,8 @@
     <Compile Include="MASTER_PAGE.Master.designer.cs">
       <DependentUpon>MASTER_PAGE.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerBusinessLayer.cs" />
     <Compile Include="NEW_CUSTOMER.aspx.cs">
       <DependentUpon>NEW_CUSTOMER.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

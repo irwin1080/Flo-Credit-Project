@@ -50,7 +50,7 @@
 
                     </td>
                     <td> 
- <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
+            <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtCity" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
@@ -92,7 +92,7 @@
           
           
           
-           <asp:Button ID="btnRegister" runat="server" Text="Register" />
+           <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
         </div>
  
 </asp:Content>

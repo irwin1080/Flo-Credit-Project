@@ -45,7 +45,7 @@
            <asp:Label ID="lblStreet2" runat="server" Text="Street Address 2"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtStreet2" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
-           <asp:TextBox ID="txtStreet2" runat="server"></asp:TextBox>
+           <asp:TextBox ID="txtStreet2" runat="server" OnTextChanged="txtStreet2_TextChanged"></asp:TextBox>
            <br />   <br /> 
 
                     </td>
@@ -61,6 +61,12 @@
            <br />   <br /> 
            <asp:TextBox ID="txtState" runat="server"></asp:TextBox>
            <br />   <br /> 
+
+           <asp:Label ID="lblZipCode" runat="server" Text="ZipCode"></asp:Label>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtZipCode" ForeColor="Red">* XXXXX</asp:RequiredFieldValidator>
+           <br />   <br /> 
+           <asp:TextBox ID="txtZipCode" runat="server"></asp:TextBox>
+           <br />   <br />
 
            <asp:Label ID="lblSSN" runat="server" Text="Social Security Number"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtSSN" ForeColor="Red">* ###-##-####</asp:RequiredFieldValidator>

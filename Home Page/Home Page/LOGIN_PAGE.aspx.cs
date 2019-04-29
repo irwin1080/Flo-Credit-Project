@@ -19,18 +19,22 @@ namespace Home_Page
 
         //signs them into their account if they have one registered 
         //if not, they are redirected to sign up 
+        //UsingAcessDB example
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(conString);
             if(con.State==System.Data.ConnectionState.Open)
             {
-                string q = "insert into Test(id, name)values('" + txtUserID.Text.ToString() + "','" + txtPassword.Text.ToString() + "')";
-                SqlCommand cmd = new SqlCommand(q, con);
-                cmd.ExecuteNonQuery();
+                //usingAccessDB example to use SQL to pull info from database
                 Response.Redirect("EXISTING_USER.aspx");
             }
             else
                 Response.Redirect("NEW_CUSTOMER.aspx");
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
         }
     }
 }

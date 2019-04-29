@@ -14,8 +14,8 @@
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click"/>
-            <br />  
+            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click1"/>
+            <br />  <a href="LOGIN_PAGE.aspx"></a>
             <br />
             <asp:Label ID="lblLoginMsg" runat="server" Text=" "></asp:Label>
         </div>

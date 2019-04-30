@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Data.OleDb;
 
 namespace Home_Page
 {
@@ -21,12 +23,21 @@ namespace Home_Page
         //if not, they are redirected to sign up 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conString);
-            if(con.State==System.Data.ConnectionState.Open)
-            {
-                string q = "insert into Test(id, name)values('" + txtUserID.Text.ToString() + "','" + txtPassword.Text.ToString() + "')";
-                SqlCommand cmd = new SqlCommand(q, con);
-                cmd.ExecuteNonQuery();
+            string username, password;
+            username = txtUserID.Text;
+            password = txtPassword.Text;
+
+            string connStr = ConfigurationManager.ConnectionStrings["CustomerCon"].ConnectionString;
+            OleDbConnection connection = new OleDbConnection(connStr);
+            connection.Open();
+
+            OleDbCommand com = new OleDbCommand("SELECT * FROM Customer WHERE [User ID]='" + username + " 'AND [Password]='" + password
+                + "'", connection);
+
+            OleDbDataReader reader = com.ExecuteReader();
+
+            if (reader.HasRows)
+            { 
                 Response.Redirect("EXISTING_USER.aspx");
             }
             else

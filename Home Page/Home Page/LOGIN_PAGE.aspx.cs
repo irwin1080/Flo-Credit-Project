@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Data.OleDb;
 
 namespace Home_Page
 {
@@ -19,22 +21,27 @@ namespace Home_Page
 
         //signs them into their account if they have one registered 
         //if not, they are redirected to sign up 
-        //UsingAcessDB example
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conString);
-            if(con.State==System.Data.ConnectionState.Open)
-            {
-                //usingAccessDB example to use SQL to pull info from database
+            string username, password;
+            username = txtUserID.Text;
+            password = txtPassword.Text;
+
+            string connStr = ConfigurationManager.ConnectionStrings["CustomerCon"].ConnectionString;
+            OleDbConnection connection = new OleDbConnection(connStr);
+            connection.Open();
+
+            OleDbCommand com = new OleDbCommand("SELECT * FROM Customer WHERE [User ID]='" + username + " 'AND [Password]='" + password
+                + "'", connection);
+
+            OleDbDataReader reader = com.ExecuteReader();
+
+            if (reader.HasRows)
+            { 
                 Response.Redirect("EXISTING_USER.aspx");
             }
             else
                 Response.Redirect("NEW_CUSTOMER.aspx");
-        }
-
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-
         }
     }
 }

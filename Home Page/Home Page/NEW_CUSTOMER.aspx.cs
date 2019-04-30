@@ -24,24 +24,25 @@ namespace Home_Page
 
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@LastName", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@DOB", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@Email", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@Street1", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@Street2", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@City", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@State", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@SSN", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@Income", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@UserName", txtFirstName.Text);
-            cmd.Parameters.AddWithValue("@Password", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@LastName", txtLastName.Text);
+            cmd.Parameters.AddWithValue("@DOB", txtDOB.Text);
+            cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("@Street1", txtStreet1.Text);
+            cmd.Parameters.AddWithValue("@Street2", txtStreet2.Text);
+            cmd.Parameters.AddWithValue("@City", txtCity.Text);
+            cmd.Parameters.AddWithValue("@State", txtState.Text);
+            cmd.Parameters.AddWithValue("@SSN", txtSSN.Text);
+            cmd.Parameters.AddWithValue("@Income", txtAnnualIncome.Text);
+            cmd.Parameters.AddWithValue("@UserName", txtUserName.Text);
+            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
 
             connectionString.Open();
 
             cmd.ExecuteNonQuery();
 
-            connectionString.Close(); 
+            connectionString.Close();
 
+            Response.Redirect("EXISTING_USER.aspx");
 
         }
     }

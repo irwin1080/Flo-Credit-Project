@@ -12,7 +12,7 @@
             <thead style="border-top-style: none"> 
                 <tr style="background-color: #FFFFFF"> 
                     <td>
-                         <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
+                         <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label> 
            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFirstName" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
@@ -45,16 +45,17 @@
            <asp:Label ID="lblStreet2" runat="server" Text="Street Address 2"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtStreet2" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
-           <asp:TextBox ID="txtStreet2" runat="server" OnTextChanged="txtStreet2_TextChanged"></asp:TextBox>
+           <asp:TextBox ID="txtStreet2" runat="server" ></asp:TextBox>
            <br />   <br /> 
-
-                    </td>
-                    <td> 
-            <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
+          
+           <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtCity" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
            <br />   <br /> 
+                    </td>
+                    <td> 
+            
 
            <asp:Label ID="lblState" runat="server" Text="State"></asp:Label>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtState" ForeColor="Red">* XX</asp:RequiredFieldValidator>
@@ -90,7 +91,11 @@
            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtPassword" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+           
+                        
            <br />   <br /> 
+           <br />   <br /> 
+            <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
                     </td>
                 </tr>
             </thead>
@@ -98,7 +103,7 @@
           
           
           
-           <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
+           
         </div>
  
 </asp:Content>

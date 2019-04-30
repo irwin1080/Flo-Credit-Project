@@ -16,102 +16,34 @@ namespace Home_Page
         {
 
         }
-    }
 
-    public class Customer
-    {
-        public int CustomerID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public int ZipCode { get; set; }
-
-    }
-
-    public void AddCustomer(Customer cust)
-    {
-        String connString = ConfigurationManager.ConnectionStrings["CustomerCon"].ConnectionString;
-        using (SqlConnection sqlCon = new SqlConnection(connString))
+        protected void btnRegister_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("spAddCustomer", sqlCon);
-            command.CommandType = CommandType.StoredProcedure;
+            SqlConnection connectionString = new SqlConnection(@"Data Source=customer-flo-credit.database.windows.net;Initial Catalog=CUSTOMER_DB;User ID=Customer;Password=FloCredit1;Connect Timeout=60;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlCommand cmd = new SqlCommand("spAddCustomer", connectionString);
 
-            SqlParameter paramFirstName = new SqlParameter
-            {
-                ParameterName = "@FirstName",
-                Value = cust.FirstName
-            };
-            command.Parameters.Add(paramFirstName);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@LastName", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@DOB", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@Email", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@Street1", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@Street2", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@City", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@State", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@SSN", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@Income", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@UserName", txtFirstName.Text);
+            cmd.Parameters.AddWithValue("@Password", txtFirstName.Text);
 
-            SqlParameter paramLastName = new SqlParameter
-            {
-                ParameterName = "@LastName",
-                Value = cust.FirstName
-            };
-            command.Parameters.Add(paramLastName);
+            connectionString.Open();
 
-            SqlParameter paramStreet = new SqlParameter
-            {
-                ParameterName = "@Street",
-                Value = cust.Street
-            };
-            command.Parameters.Add(paramStreet);
+            cmd.ExecuteNonQuery();
 
-            SqlParameter paramCity = new SqlParameter
-            {
-                ParameterName = "@City",
-                Value = cust.City
-            };
-            command.Parameters.Add(paramCity);
+            connectionString.Close(); 
 
-            SqlParameter paramState = new SqlParameter
-            {
-                ParameterName = "@State",
-                Value = cust.State
-            };
-            command.Parameters.Add(paramState);
 
-            SqlParameter paramZipCode = new SqlParameter
-            {
-                ParameterName = "@ZipCode",
-                Value = cust.ZipCode
-            };
-            command.Parameters.Add(paramZipCode);
-
-            sqlCon.Open();
-            command.ExecuteNonQuery();
         }
     }
 
-    public IEnumerable<Customer> Customers
-    {
-        get
-        {
-            String connString = ConfigurationManager.ConnectionStrings["CustomerCon"].ConnectionString;
-            List<Customer> custy = new List<Customer>();
-            using (SqlConnection con = new SqlConnection(connString))
-            {
-                SqlCommand cmd = new SqlCommand("Select * From Customer", con);
-                cmd.CommandType = CommandType.Text;
-                con.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Customer customer = new Customer();
-                    customer.CustomerID = Convert.ToInt32(reader[0]);
-                    customer.FirstName = reader[1].ToString();
-                    customer.LastName = reader[2].ToString();
-                    customer.Street = reader[3].ToString();
-                    customer.City = reader[4].ToString();
-                    customer.State = reader[5].ToString();
-                    customer.ZipCode = Convert.ToInt32(reader[6]);
-
-                    custy.Add(customer);
-                }
-                return custy;
-            }
-        }
-    }
 }

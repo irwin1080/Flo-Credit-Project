@@ -14,6 +14,12 @@ namespace Home_Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Customer cust = new Customer(); 
+            
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
 
         }
     }
@@ -28,6 +34,23 @@ namespace Home_Page
         public string State { get; set; }
         public int ZipCode { get; set; }
 
+    }
+
+    public Create(string firstName, string lastName, string street, string city, string state, int zipcode)
+    {
+      
+        Customer cust = new Customer();
+        cust.FirstName = firstName;
+        cust.LastName = lastName;
+        cust.Street = street;
+        cust.City = city;
+        cust.State = state;
+        cust.ZipCode = zipcode;
+
+        Customer.AddCustomer(cust);
+
+
+     
     }
 
     public void AddCustomer(Customer cust)

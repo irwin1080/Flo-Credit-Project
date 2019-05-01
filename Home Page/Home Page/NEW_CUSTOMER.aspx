@@ -43,7 +43,6 @@
            <br />   <br /> 
 
            <asp:Label ID="lblStreet2" runat="server" Text="Street Address 2"></asp:Label>
-           <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtStreet2" ForeColor="Red">*</asp:RequiredFieldValidator>
            <br />   <br /> 
            <asp:TextBox ID="txtStreet2" runat="server" ></asp:TextBox>
            <br />   <br /> 
